@@ -2,7 +2,7 @@ def pascal_triangle(n):
     """ pascal_triangle """
     if (n <= 0):
         return []
-    
+
     triangleP = []
 
     for i in range(n):
