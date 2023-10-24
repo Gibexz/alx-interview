@@ -23,7 +23,7 @@ def validUTF8(data):
         else:
             new_data = data[1:]
             for i in new_data:
-                if i > 191:
+                if i > 191: # contination value limit check. Maxed at 10111111 == 191
                     return False
     return True
 
