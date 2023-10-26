@@ -14,8 +14,8 @@ def validUTF8(data):
             if i > 127: return False # for 1 byte
             else: pass
     elif len(data) > 1:
-        if len(data) == 2 and data[0] > 223: return False # for 2 bytes
-        elif len(data) == 3 and data[0] > 239: return False # 3 bytes
+        if len(data) >= 2 and data[0] > 223: return False # for 2 bytes
+        # elif len(data) == 3 and data[0] > 239: return False # 3 bytes
         # elif len(data) == 4 and data[0] > 247: return False # 4 bytes
         # elif len(data) >= 5 and data[0] > 253: return False # 5 bytes and more.
         # there could be a few more line here for checkes above len 5
