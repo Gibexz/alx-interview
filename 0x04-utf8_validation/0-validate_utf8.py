@@ -12,7 +12,7 @@ def validUTF8(data):
     if len(data) == 1:
         for i in data:
             if i > 127: return False # for 1 byte
-            else: pass
+            else: return True
     elif len(data) > 1:
         if len(data) >= 2 and data[0] > 223: return False # for 2 bytes
         # elif len(data) == 3 and data[0] > 239: return False # 3 bytes
